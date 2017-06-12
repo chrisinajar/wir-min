@@ -1,11 +1,10 @@
 import createBrowserHistory from 'history/createBrowserHistory';
 import insertStylesheet from 'json-stylesheets';
-import App from './app'
+import App from './app';
 import window from 'global/window';
 import document from 'global/document';
 import { render } from 'inferno';
 import { Provider } from 'inferno-redux';
-import Component from 'inferno-component';
 import { Router, Route } from 'inferno-router';
 
 import Page from './components/page';
