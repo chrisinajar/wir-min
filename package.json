@@ -1,0 +1,45 @@
+{
+  "name": "wir-min",
+  "version": "1.0.0",
+  "description": "webpack, inferno, redux minimal boilerplate playground",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run webpack-dev-server -- --quiet --config webpack.conf.js --host 0.0.0.0",
+    "install": "yarn install --ignore-scripts ",
+    "test": "npm run semistandard && 'npm run tape ./src/**/*test.js | npm run tap-summary'",
+    "webpack-dev-server": "webpack-dev-server",
+    "tape": "tape",
+    "tap-summary": "tap-summary",
+    "semistandard": "semistandard"
+  },
+  "repository": "git+https://github.com/chrisinajar/wir-min.git",
+  "author": "Chris Vickery <chrisinajar@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrisinajar/wir-min/issues"
+  },
+  "homepage": "https://github.com/chrisinajar/wir-min#readme",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-inferno": "^3.2.0",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-preset-es2040": "^1.1.1",
+    "inferno-devtools": "^3.4.3",
+    "semistandard": "^11.0.0",
+    "tap-summary": "^3.0.2",
+    "tape": "^4.6.3",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "global": "^4.3.2",
+    "history": "^4.6.1",
+    "inferno": "^3.4.3",
+    "inferno-component": "^3.4.3",
+    "inferno-redux": "^3.4.3",
+    "inferno-router": "^3.4.3",
+    "json-stylesheets": "^0.2.0",
+    "redux": "^3.6.0"
+  }
+}

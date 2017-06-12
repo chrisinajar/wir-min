@@ -1,0 +1,4 @@
+{
+  "presets": ["es2040"],
+  "plugins": ["babel-plugin-syntax-jsx", ["babel-plugin-inferno", {"imports": true}]]
+}
